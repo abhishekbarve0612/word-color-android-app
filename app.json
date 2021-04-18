@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "color-app",
-    "slug": "color-app",
+    "name": "word-color",
+    "slug": "word-color",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,13 +13,12 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.abhishekbarve.wordColor",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -27,6 +26,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Uses https://api.color.pizza API to get the color list of the word entered\nClick on the color tile to get the color hex copied to the clipboard and use it wherever you need",
+    "githubUrl": "https://github.com/abhishekbarve0612/word-color-android-app.git"
   }
 }

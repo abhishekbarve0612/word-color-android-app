@@ -18,12 +18,6 @@ import Clipboard from "expo-clipboard";
 export default function Color({ colorData, copyToClipBoard, navigation }) {
   return (
     <ScrollView>
-      <Button
-        title="Go Back To Home"
-        onPress={() => {
-          navigation.navigate("Home");
-        }}
-      />
       <View style={styles.colorContainer}>
         {colorData &&
           colorData
@@ -59,6 +53,13 @@ export default function Color({ colorData, copyToClipBoard, navigation }) {
               );
             })}
       </View>
+      <Button
+        style={{ padding: 30 }}
+        title="Go Back To Home"
+        onPress={() => {
+          navigation.navigate("Home");
+        }}
+      />
     </ScrollView>
   );
 }
